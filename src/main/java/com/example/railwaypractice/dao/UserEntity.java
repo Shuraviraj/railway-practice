@@ -1,10 +1,9 @@
 package com.example.railwaypractice.dao;
 
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.UUID;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -13,9 +12,9 @@ import java.util.UUID;
 public class UserEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", updatable = false, nullable = false)
-    private UUID id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
