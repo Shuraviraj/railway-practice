@@ -2,4 +2,4 @@ spring:
   application:
     name: railway-practice
   profiles:
-    active: local
+    active:
